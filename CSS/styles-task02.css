@@ -1,0 +1,146 @@
+/* Common */
+:root {
+  /* text color */
+  --color-text-primary: rgba(255, 255, 255, 1);
+  --color-text-second: rgba(0, 0, 0, 1);
+
+  /* background */
+  --color-background-body: rgb(200, 200, 200, 1);
+  --color-background-item: rgb(128, 128, 128, 1);
+  --color-background-item-hover: rgb(94, 94, 94, 1);
+
+  /* text */
+  --text-primary: "Arial", sans-serif;
+}
+
+/* delete list-style */
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 1200px;
+  background-color: var(--color-background-body);
+  font-family: var(--text-primary);
+}
+
+aside {
+  position: fixed;
+  color: var(--color-text-primary);
+  background-color: var(--color-background-item);
+  float: left;
+  width: 150px;
+  height: 100%;
+  overflow: hidden;
+  margin-left: 20px;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+aside > h2 {
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  font-weight: 300;
+  padding-left: 40px;
+  top: 0;
+}
+
+ul {
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  height: 50px;
+  line-height: 50px;
+  padding: 20px 40px 20px 40px;
+}
+
+[class] {
+  list-style: none;
+  padding-left: 90px;
+  background-position: 50px 20px;
+}
+
+.edit {
+  background-image: url("/icons/edit.png");
+  background-repeat: no-repeat;
+}
+
+.favorites {
+  background-image: url("/icons/favorites.png");
+  background-repeat: no-repeat;
+}
+
+.history {
+  background-image: url("/icons/history.png");
+  background-repeat: no-repeat;
+}
+
+.security {
+  background-image: url("/icons/security.png");
+  background-repeat: no-repeat;
+}
+
+.setting {
+  background-image: url("/icons/settings.png");
+  background-repeat: no-repeat;
+}
+span {
+  padding-left: 60px;
+  padding-bottom: 20px;
+  margin-top: -15px;
+}
+
+aside:hover {
+  width: 350px;
+  height: 100%;
+  overflow: hidden;
+  margin-left: 20px;
+  /* top: 0;
+  position: sticky; */
+}
+
+li:hover {
+  background-color: var(--color-background-item-hover);
+  /* top: 0;
+  position: sticky; */
+}
+
+body::after {
+  content: "";
+  height: 0;
+  display: table;
+  clear: both;
+}
+
+.menu {
+  /* display: inline-block; */
+  color: var(--color-text-second);
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  font-weight: 4001;
+  padding-left: 170px;
+  margin-left: 50px;
+  /* position: sticky; */
+  text-transform: uppercase;
+}
+
+.menu h2 {
+  /* display: inline-block; */
+  color: var(--color-text-second);
+  font-size: 30px;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  /* position: sticky; */
+  text-transform: uppercase;
+}
+
+section {
+  margin-bottom: 40px;
+}
